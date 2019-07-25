@@ -43,8 +43,8 @@
                     <div class="card-body">
                         <h6 class="card-title"><?= $brg->nama_brg ?></h6>
                         <small><?= $brg->keterangan ?></small><br>
-                        <span class="badge badge-pill badge-success mb-3">Rp. <?= $brg->harga ?></span><br>
-                        <a href="" class="btn btn-sm btn-primary "> Tambah ke Keranjang</a>
+                        <span class="badge badge-pill badge-success mb-3">Rp. <?php echo number_format($brg->harga, 0, ',', '.') ?></span><br>
+                        <a href="<?= ('dashboard/tambah_ke_keranjang/') . $brg->id_brg ?>" class="btn btn-sm btn-primary "> Tambah ke Keranjang</a>
                         <a href="" class="btn btn-sm btn-success "> Detail</a>
                     </div>
                 </div>

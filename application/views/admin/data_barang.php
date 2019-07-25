@@ -19,7 +19,7 @@
                 <td><?= $brg->nama_brg ?></td>
                 <td><?= $brg->keterangan ?></td>
                 <td><?= $brg->kategori ?></td>
-                <td>Rp. <?= $brg->harga ?></td>
+                <td>Rp. <?php echo number_format($brg->harga, 0, ',', '.') ?></td>
                 <td><?= $brg->stok ?></td>
                 <td>
                     <?= anchor('admin/data_barang/detail/' . $brg->id_brg, '<div class="btn btn-success btn-sm"><i class="fas fa-search-plus"></i></div>') ?>
